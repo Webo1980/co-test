@@ -14,4 +14,4 @@
 	- run the application on (eg http://127.0.01:4200)
 - Note:
   - if you do not want to download ./co-test-client/node_modules. Please make sure to install bulma css library: 
-    npm install --save bulma
+  - npm install --save bulma
