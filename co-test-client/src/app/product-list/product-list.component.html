@@ -1,0 +1,21 @@
+<div>
+    <span class="help is-info"  *ngIf="isLoading">Loading...</span>
+    <table class="table" *ngIf="!isLoading">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Products Count</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{ product.id }}</td>
+                <td>{{ product.title }}</td>
+                <td>{{ product.count }}</td>
+            	<td><a [routerLink]="['/product-details', product.id]" (click)="onSelect(product)">Details</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
